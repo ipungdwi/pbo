@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.login-form1 {
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #fff;
+}
+
+.login-form1 h1 {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0;
+    color: rgb(255, 255, 255);
+}
+
+.login-form1 p {
+    font-size: 16px;
+    margin: 15px 0;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+}
+
+.kartu{
+    width: 90%;
+    max-width: 440px;
+    color: rgb(0, 0, 0);
+    padding: 60px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.login-form1 .img{
+    width: 250px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-form1 input {
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 10px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+}
+
+.login-form1 .btnt {
+    border: 1px solid;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 90px;
+    width: 100%;
+    border-radius: 5px;
+    width: 150px;
+    position: absolute;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.login-form1 .btnt:hover {
+    background-color: rgb(236, 220, 45);
+    transition: .4s ease-in-out;
+    -o-transition-delay: 0.2s;
+}
+
+.popup{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ;
+}
+
+.popup_content{
+    width: 50%;
+    background-color: rgb(211, 204, 191);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.10);
+    opacity: 0;
+    transition: all .5s .2s;
+    border-radius: 10px;
+}
+
+#popup:target{
+    opacity: 1;
+    visibility: visible;
+}
+
+#popup:target .popup_content{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(.90);
+}
+
+.popup_close:link,
+.popup_close:visited{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    display: inline-block;
+    line-height: 1;
+    transition: all .3s;
+}
+
+.popup_close:hover,
+.popup_close:active{
+    color: rgb(120, 117, 117);
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px;
+}
+
+.a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
